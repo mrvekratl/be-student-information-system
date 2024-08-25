@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #605e86;
+}
+
+.nav-brand .nav-link .navbar-nav {
+    color: white;
+}
+
+
+.modal-content {
+    background-color: #3f3b87;
+    color: white;
+}
+
+
+.hero-section {
+    background-color: #605e86;
+    color: white;
+    padding: 60px 0;
+    height: 700px;
+}
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+    }
+
+.hero-image {
+    max-width: 100%;
+}
+
+.cta-button {
+    background-color: #e43b2b
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.feature-section {
+    background-color: #FF6F61;
+    color: white;
+    padding: 40px 20px;
+}
+
+.navbar-custom {
+    background-color: transparent;
+}
