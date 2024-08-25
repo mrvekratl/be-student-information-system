@@ -42,7 +42,7 @@
                 <div class="col-md-6 text-start">
                     <img src="9229.jpg" alt="Hero Image" class="hero-image img-fluid">
                 </div>
-                <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-finish">
 
                     <p>Login</p>
 
@@ -50,126 +50,131 @@
 
                         <div class="mb-12 text-start">
                             <label for="exampleInputEmail1" class="form-label">Student Username</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" data-validation-element="#mailValidation" minlength="4" required>
 
+                            <div id="mailValidation" class="alert alert-danger d-none mt-1"></div>
                         </div>
 
                         <div class="mb-12 text-start">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <input type="password" class="form-control" id="exampleInputPassword1"  minlength="4" data-validation-element="#passwordValidation" required>
+                            <div id="passwordValidation" class="alert alert-danger d-none mt-1"></div>
                         </div>
                         <br />
-                        <button type="submit" class="cta-button">Submit</button>
+                        <button type="submit" class="cta-button mb-12 text-start">Submit</button>
                         <br />
                         <br />
                         <a href="" class="text">Forgot Password?</a>
                         <hr />
 
-                        <!--Sign Up-->
+                    </form>
 
-                        <button type="button" class="cta-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create New Account</button>
 
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3 >Sign Up</h3>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form class="row g-3 needs-validation" novalidate id="studentSignupForm">
-                                            <!--Sing Up Form-->
-                                            <div class="col-md-6  text-start ">
-                                                <label for="validationCustom01" class="form-label">Student Name</label>
-                                                <input type="text" class="form-control" id="validationCustom01" maxlength="50" minlength="3" required>
 
-                                            </div>
+                    <!--Sign Up-->
+                    <button type="button" class="btn cta-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Create New Account</button>
 
-                                            <div class="col-md-6  text-start ">
-                                                <label for="validationCustom01" class="form-label">Student Surname</label>
-                                                <input type="text" class="form-control" id="validationCustom01" maxlength="50" minlength="3" required>
 
-                                            </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Sign Up</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3 needs-validation" id="studentSignupForm">
+                                        <!--Sing Up Form-->
+                                        <div class="col-md-6  text-start ">
+                                            <label for="validationCustom01" class="form-label">Student Name</label>
+                                            <input type="text" class="form-control" id="validationCustom01" maxlength="50" minlength="3" required>
 
-                                            <div class="col-md-6 text-start">
 
-                                                <label for="validationCustomEmail" class="form-label">Email</label>
-                                                <div class="input-group has-validation">
+                                        </div>
 
-                                                    <input type="email" class="form-control" id="validationCustomEmail" required>
+                                        <div class="col-md-6  text-start ">
+                                            <label for="validationCustom01" class="form-label">Student Surname</label>
+                                            <input type="text" class="form-control" id="validationCustom01" maxlength="50" minlength="3" required>
 
-                                                </div>
-                                            </div>
+                                        </div>
 
-                                            <div class="col-md-6 text-start">
-                                                <label for="validationCustom03" class="form-label">Phone</label>
+                                        <div class="col-md-6 text-start">
 
-                                                <input type="number" class="form-control" id="validationCustom03" required>
+                                            <label for="validationCustomEmail" class="form-label">Email</label>
+                                            <div class="input-group has-validation">
 
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid city.
-                                                </div>
+                                                <input type="email" class="form-control" id="validationCustomEmail" required>
 
                                             </div>
+                                        </div>
 
-                                            <div class="col-md-6 text-start">
-                                                <label for="validationCustom04" class="form-label">Date of Birth</label>
+                                        <div class="col-md-6 text-start">
+                                            <label for="validationCustom03" class="form-label">Phone</label>
 
-                                                <input type="date" class="form-control" id="validationCustom04" name="validationCustom04" min="1900-01-01" max="2024-12-31" required />
+                                            <input type="number" class="form-control" id="validationCustom03" required>
 
-                                                <div class="invalid-feedback">
-                                                    Please select a valid state.
-                                                </div>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid city.
                                             </div>
 
-                                            <div class="col-md-6 text-start">
-                                                <label for="validationCustom05" class="form-label">Adress</label>
-                                                <input type="text" class="form-control" id="validationCustom05" required>
+                                        </div>
 
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid zip.
-                                                </div>
+                                        <div class="col-md-6 text-start">
+                                            <label for="validationCustom04" class="form-label">Date of Birth</label>
+
+                                            <input type="date" class="form-control" id="validationCustom04" name="validationCustom04" min="1900-01-01" max="2024-12-31" required />
+
+                                            <div class="invalid-feedback">
+                                                Please select a valid state.
                                             </div>
+                                        </div>
 
-                                            <div class="col-md-6 text-start">
-                                                <label for="validationCustom06" class="form-label">Password</label>
-                                                <input type="password" class="form-control" id="validationCustom06" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}$" required>
+                                        <div class="col-md-6 text-start">
+                                            <label for="validationCustom05" class="form-label">Adress</label>
+                                            <input type="text" class="form-control" id="validationCustom05" required>
 
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid zip.
-                                                </div>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid zip.
                                             </div>
+                                        </div>
 
-                                            <div class="col-md-6 text-start">
-                                                <label for="validationCustom07" class="form-label">Confirm Password</label>
-                                                <input type="password" class="form-control" id="validationCustom07" data-val-equalto-other="validationCustom06" data-val-equalto="Passwords do not match." required>
+                                        <div class="col-md-6 text-start">
+                                            <label for="validationCustom06" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="validationCustom06" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,24}$" required>
 
-                                                <div class="invalid-feedback">
-                                                    Please provide a valid zip.
-                                                </div>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid zip.
                                             </div>
+                                        </div>
+
+                                        <div class="col-md-6 text-start">
+                                            <label for="validationCustom07" class="form-label">Confirm Password</label>
+                                            <input type="password" class="form-control" id="validationCustom07" data-val-equalto-other="validationCustom06" data-val-equalto="Passwords do not match." required>
+
+                                            <div class="invalid-feedback">
+                                                Please provide a valid zip.
+                                            </div>
+                                        </div>
 
 
-                                        </form>
+                                    </form>
 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Save changes</button>
-                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Save changes</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                    </form>
-                    
 
                 </div>
             </div>
         </div>
     </section>
 
-    
+
     <section class="feature-section text-center">
         <div class="container">
             <div class="row">
@@ -180,6 +185,35 @@
         </div>
     </section>
 
+    <script>
+        const form = document.querySelector("#studentLoginForm");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(); // form'un submit edilmesini durdur, beklet
+
+            const inputs = form.querySelectorAll("input");
+
+            inputs.forEach(input => {
+                const messageElementSelector = input.getAttribute("data-validation-element");
+                const messageElement = document.querySelector(messageElementSelector);
+
+                if (!messageElement) {
+                    return; // early return. div yok ise
+                }
+
+
+                if (!input.checkValidity()) {
+                    messageElement.innerText = "Please enter a valid value...";
+                    messageElement.classList.remove("d-none");
+                }
+                else {
+                    messageElement.classList.add("d-none");
+                }
+            });
+        });
+
+
+    </script>
 
 
 
