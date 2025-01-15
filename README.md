@@ -2,6 +2,9 @@
 
 This project is a simple ASP.NET Core Web API designed to manage a student information system. The system allows CRUD operations on student data and implements both server-side and client-side validation.
 
+## Screenshot
+![Image Gallery Screenshot](screenshot.png)
+
 ## Objectives
 
 - Develop a .NET Core Web API for managing student information.
