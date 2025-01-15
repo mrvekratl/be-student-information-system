@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Monster\\Desktop\\BE124\\GÖREV_6\\TESLİM\\App\\App.WebApi\\App.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Monster\\Desktop\\BE124\\GÖREV_6\\TESLİM\\Ogrenci-Bilgi-Sistemi\\App\\App.WebApi\\App.WebApi.csproj",
       "projectName": "App.WebApi",
-      "projectPath": "C:\\Users\\Monster\\Desktop\\BE124\\GÖREV_6\\TESLİM\\App\\App.WebApi\\App.WebApi.csproj",
+      "projectPath": "C:\\Users\\Monster\\Desktop\\BE124\\GÖREV_6\\TESLİM\\Ogrenci-Bilgi-Sistemi\\App\\App.WebApi\\App.WebApi.csproj",
       "packagesPath": "C:\\Users\\Monster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Monster\\Desktop\\BE124\\GÖREV_6\\TESLİM\\App\\App.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Monster\\Desktop\\BE124\\GÖREV_6\\TESLİM\\Ogrenci-Bilgi-Sistemi\\App\\App.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Monster\\AppData\\Roaming\\NuGet\\NuGet.Config",

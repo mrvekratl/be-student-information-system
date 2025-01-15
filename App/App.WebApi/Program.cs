@@ -1,5 +1,17 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// CORS ayarlarýný ekleyin
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins",
+        builder =>
+        {
+            builder.WithOrigins("file:///C:/Users/Monster/Desktop/BE124/G%C3%96REV_6/TESL%C4%B0M/Ogrenci-Bilgi-Sistemi/Frontend/Index-OBS.html") // Buraya izin verilen frontend adresini ekleyin
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
